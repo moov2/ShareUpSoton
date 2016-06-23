@@ -1,0 +1,135 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $MAIN
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * Main wrapper around the whole content.
+ */
+
+.main {
+	@include rem(padding, $spacing-large $spacing-base);
+
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $layout-width-max;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+$green : #00ff78;
+$grey : #292623;
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1em;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: $grey;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.441em;
+}
+
+h2 {font-size: 1.953em;}
+
+h3 {font-size: 1.563em;}
+
+h4 {font-size: 1.25em;}
+
+small, .font_small {font-size: 0.8em;}
+
+.header {
+  padding: 10% 5%;
+  text-align: center;
+}
+
+.header__strapline {
+  font-size: 1.2rem;
+}
+
+.header__list {
+  list-style: none;
+  padding: 0;
+}
+
+.header__list__item {
+  padding: 10% 2.5%;
+  text-align: center;
+  img {
+    width: 50%;
+    max-width: 150px;
+  }
+}
+
+.maininfo {
+  background: $grey;
+  color: whitesmoke;
+  padding: 10% 5%;
+}
+
+.maininfo__heading {
+  margin: 150px 0;
+}
+
+.faq {
+  padding: 10% 5%;
+}
+
+.footer {
+  text-align: center;
+  background: $green;
+  padding: 50px;
+}
+
+.logo {
+  max-width: 100px;
+  vertical-align: middle;
+  margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .header__list__item {
+      width: 30%;
+      display: inline-block;
+      vertical-align: top;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  .maininfo, .faq {
+    padding: 5% 20%;
+  }
+
+  .header__list__item {
+    padding: 2.5%;
+  }
+}

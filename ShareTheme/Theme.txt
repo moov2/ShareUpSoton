@@ -1,0 +1,7 @@
+Name: ShareTheme
+Author: Jack Davies
+Website: http://www.moov2.com
+Description: The website theme for ShareUp Soton
+Version: 0.9.1
+Tags: ShareUp, Soton
+Zones: Header, Navigation, Featured, BeforeMain, AsideFirst, Messages, BeforeContent, Content, AfterContent, AsideSecond, AfterMain, TripelFirst, TripelSecond, TripelThird, FooterQuadFirst, FooterQuadSecond, FooterQuadThird, FooterQuadFourth, Footer
